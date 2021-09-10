@@ -28,3 +28,12 @@ function listItems() {
 }
 //testing list fucntion
 listItems();
+
+//creating a function to empty basket or reset it to empty
+console.log('testing a function to empty my basket, should see an empty array');
+function empty(){
+  basket = [];
+  console.log( 'emptying basket:', basket);
+}
+ //testing fucntion
+ empty();
