@@ -3,17 +3,28 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 let basket = [] //creating empty array
-console.log(basket); //checking array works
+console.log('basket is empty', basket); //checking array works
 
-function addItem( item ) {
-  console.log( 'Adding item to basket:', item);
-  basket.push( item );
+function addItem(item) { //creating function to push items into basket
+  console.log('Adding item to basket:', item);
+  basket.push(item);
   return true;
 }
 
-addItem( 'apple' );
-console.log(basket);
-addItem( 'sandwhich' );
-addItem( 'silverware' );
-addItem( 'napkin' );
-console.log(basket);
+//using function to push items into basket
+addItem('apple');
+console.log('added one item to basket to test function', basket);
+addItem('hummus sandwich');
+addItem('dark chocolate');
+addItem('napkin');
+addItem('bottle of rosé')
+console.log('basket now has:', basket);
+
+//creating a function to list the items in the basket using a loop
+console.log('I will create a loop via a function to list the items in my basket!');
+function listItems() {
+  for(items of basket)
+  console.log('An item in my basket is:', items);
+}
+//testing list fucntion
+listItems();
